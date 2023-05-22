@@ -48,12 +48,12 @@
         </nav>
         <address class="contacts">
           <ul class="header-contacts list">
-            <li>
+            <li class="header-contact-item">
               <a class="contact link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="header-contact-item">
               <a class="contact link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -64,14 +64,14 @@
     </header>
     <main>
       <!--=======HERO=======-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!--=======ADVANTAGES=======-->
       <section class="adv">
         <div class="adv-container container">
@@ -132,29 +132,44 @@
       <section class="exmpl">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
-          <ul class="exmpl-list card-set list">
-            <li class="exmpl-item card-set-item">
+          <ul class="exmpl-list list">
+            <li class="exmpl-item">
               <img
                 class="exmpl-img"
-                src="./images/index-img/img-1.jpg"
+                srcset="
+                  ./images/index-img/examples/img-1.jpg    1x,
+                  ./images/index-img/examples/img-1@2x.jpg 2x
+                "
+                src="./images/index-img/examples/img-1.jpg"
                 alt="iMac"
                 width="360"
+                loading="lazy"
               />
             </li>
-            <li class="exmpl-item card-set-item">
+            <li class="exmpl-item">
               <img
                 class="exmpl-img"
-                src="./images/index-img/img-2.jpg"
+                srcset="
+                  ./images/index-img/examples/img-2.jpg    1x,
+                  ./images/index-img/examples/img-2@2x.jpg 2x
+                "
+                src="./images/index-img/examples/img-2.jpg"
                 alt="Phone with 4 screens."
                 width="360"
+                loading="lazy"
               />
             </li>
-            <li class="exmpl-item card-set-item">
+            <li class="exmpl-item">
               <img
                 class="exmpl-img"
-                src="./images/index-img/img-3.jpg"
+                srcset="
+                  ./images/index-img/examples/img-3.jpg    1x,
+                  ./images/index-img/examples/img-3@2x.jpg 2x
+                "
+                src="./images/index-img/examples/img-3.jpg"
                 alt="Phhone and laptop."
                 width="360"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -167,9 +182,14 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
-                src="./images/index-img/marc-guerrero.jpg"
+                srcset="
+                  ./images/index-img/team/mark@1x.jpg 1x,
+                  ./images/index-img/team/mark@2x.jpg 2x
+                "
+                src="./images/index-img/team/mark@1x.jpg"
                 alt="Marc Guerrero"
                 width="264"
+                loading="lazy"
               />
               <div class="galery-wrapper">
                 <h3 class="galery-title subtitle">Mark Guerrero</h3>
@@ -209,9 +229,14 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/index-img/tom-ford.jpg"
+                srcset="
+                  ./images/index-img/team/tom@1x.jpg 1x,
+                  ./images/index-img/team/tom@2x.jpg 2x
+                "
+                src="./images/index-img/team/tom@1x.jpg"
                 alt="Tom Ford"
                 width="264"
+                loading="lazy"
               />
               <div class="galery-wrapper">
                 <h3 class="galery-title subtitle">Tom Ford</h3>
@@ -251,9 +276,14 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/index-img/camila-garcia.jpg"
+                srcset="
+                  ./images/index-img/team/camila@1x.jpg 1x,
+                  ./images/index-img/team/camila@2x.jpg 2x
+                "
+                src="./images/index-img/team/camila@1x.jpg"
                 alt="Camila Garcia"
                 width="264"
+                loading="lazy"
               />
               <div class="galery-wrapper">
                 <h3 class="galery-title subtitle">Camila Garcia</h3>
@@ -293,9 +323,14 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/index-img/daniel-wilson.jpg"
+                srcset="
+                  ./images/index-img/team/daniel@1x.jpg 1x,
+                  ./images/index-img/team/daniel@2x.jpg 2x
+                "
+                src="./images/index-img/team/daniel@1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
+                loading="lazy"
               />
               <div class="galery-wrapper">
                 <h3 class="galery-title subtitle">Daniel Wilson</h3>
@@ -382,7 +417,7 @@
       </section>
     </main>
     <!--=======FOOTER=======-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="footer-first-wrapper">
           <a class="logo-footer link" href="./index.html"
@@ -443,7 +478,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!--=======MODAL WINDOW=======-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
