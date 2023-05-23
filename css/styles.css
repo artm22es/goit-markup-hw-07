@@ -47,8 +47,8 @@ ol {
   padding: 0 16px;
   margin: 0 auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 /*--- Tablet screen ---*/
@@ -626,9 +626,25 @@ ol {
   align-items: baseline;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    justify-content: flex-start;
+  }
+
+  .footer-first-wrapper {
+    margin-left: 93px;
+  }
+}
 
 @media only screen and (min-width: 1158px) {
+  .footer-container {
+    flex-wrap: nowrap;
+    gap: 0;
+
+  }
+
   .footer-first-wrapper {
+    margin-left: 0;
     margin-right: 120px;
   }
 }
@@ -660,26 +676,6 @@ ol {
   color: #f4f4fd;
 }
 
-.footer-text {
-  max-width: 264px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #f4f4fd;
-}
-
-@media only screen and (min-width: 768px) {
-  .footer-text {
-    text-align: left;
-  }
-
-  .footer-title {
-    text-align-last: left;
-  }
-}
-
-
 .footer-title {
   margin-left: auto;
   margin-right: auto;
@@ -692,6 +688,20 @@ ol {
   color: #ffffff;
 }
 
+.footer-text {
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #f4f4fd;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-title {
+    text-align-last: left;
+  }
+}
 
 .social-list-footer {
   display: flex;
@@ -717,6 +727,11 @@ ol {
   background-color: #31d0aa;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-third-wrapper {
+    margin-left: 93px;
+  }
+}
 
 @media only screen and (min-width: 1158px) {
   .footer-third-wrapper {
@@ -817,14 +832,21 @@ ol {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 576px;
+  width: 392px;
+  min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px;
   transition: transform var(--transition-dur-and-func);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    padding: 72px 24px 24px;
+    width: 408px;
+  }
 }
 
 .modal-close-btn {
