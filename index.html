@@ -134,43 +134,70 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="exmpl-list list">
             <li class="exmpl-item">
-              <img
-                class="exmpl-img"
-                srcset="
-                  ./images/index-img/examples/img-1.jpg    1x,
-                  ./images/index-img/examples/img-1@2x.jpg 2x
-                "
-                src="./images/index-img/examples/img-1.jpg"
-                alt="iMac"
-                width="360"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-img/examples/img-1_web@1x.webp 1x,
+                    ./images/index-img/examples/img-1_web@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/index-img/examples/img-1@1x.jpg 1x,
+                    ./images/index-img/examples/img-1.jpg
+                  "
+                  type="image/jpg" />
+                <img
+                  class="exmpl-img"
+                  src="./images/index-img/examples/img-1.jpg"
+                  alt="iMac"
+                  width="360"
+                  loading="lazy"
+              /></picture>
             </li>
             <li class="exmpl-item">
-              <img
-                class="exmpl-img"
-                srcset="
-                  ./images/index-img/examples/img-2.jpg    1x,
-                  ./images/index-img/examples/img-2@2x.jpg 2x
-                "
-                src="./images/index-img/examples/img-2.jpg"
-                alt="Phone with 4 screens."
-                width="360"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-img/examples/img-2_web@1x.webp 1x,
+                    ./images/index-img/examples/img-2_web@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/index-img/examples/img-2@1x.jpg 1x,
+                    ./images/index-img/examples/img-2.jpg    2x
+                  "
+                  type="image/jpg" />
+                <img
+                  class="exmpl-img"
+                  src="./images/index-img/examples/img-2.jpg"
+                  alt="Phone with 4 screens."
+                  width="360"
+                  loading="lazy"
+              /></picture>
             </li>
             <li class="exmpl-item">
-              <img
-                class="exmpl-img"
-                srcset="
-                  ./images/index-img/examples/img-3.jpg    1x,
-                  ./images/index-img/examples/img-3@2x.jpg 2x
-                "
-                src="./images/index-img/examples/img-3.jpg"
-                alt="Phhone and laptop."
-                width="360"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-img/examples/img-3_web@1x.webp 1x,
+                    ./images/index-img/examples/img-3_web@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/index-img/examples/img-3.jpg    1x,
+                    ./images/index-img/examples/img-3@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  class="exmpl-img"
+                  src="./images/index-img/examples/img-3.jpg"
+                  alt="Phhone and laptop."
+                  width="360"
+                  loading="lazy"
+              /></picture>
             </li>
           </ul>
         </div>
@@ -181,16 +208,25 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                srcset="
-                  ./images/index-img/team/mark@1x.jpg 1x,
-                  ./images/index-img/team/mark@2x.jpg 2x
-                "
-                src="./images/index-img/team/mark@1x.jpg"
-                alt="Marc Guerrero"
-                width="264"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-img/team/mark_web@1x.webp 1x,
+                    ./images/index-img/team/mark_web@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/index-img/team/mark@1x.jpg 1x,
+                    ./images/index-img/team/mark@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  src="./images/index-img/team/mark@1x.jpg"
+                  alt="Marc Guerrero"
+                  width="264"
+                  loading="lazy"
+              /></picture>
               <div class="galery-wrapper">
                 <h3 class="galery-title subtitle">Mark Guerrero</h3>
                 <p class="galery-text text">Product Designer</p>
@@ -199,6 +235,8 @@
                     <a
                       class="social-link-item"
                       href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <svg class="social-icon" width="16" height="16">
                         <use
@@ -207,19 +245,34 @@
                     ></a>
                   </li>
                   <li class="social-link">
-                    <a class="social-link-item" href="https://twitter.com/">
+                    <a
+                      class="social-link-item"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="social-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
                   <li class="social-link">
-                    <a class="social-link-item" href="https://facebook.com">
+                    <a
+                      class="social-link-item"
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="social-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
                   <li class="social-link">
-                    <a class="social-link-item" href="https://linkedin.com">
+                    <a
+                      class="social-link-item"
+                      href="https://linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <svg class="social-icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use></svg
                     ></a>
@@ -228,16 +281,25 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                  ./images/index-img/team/tom@1x.jpg 1x,
-                  ./images/index-img/team/tom@2x.jpg 2x
-                "
-                src="./images/index-img/team/tom@1x.jpg"
-                alt="Tom Ford"
-                width="264"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-img/team/tom_web@1x.webp 1x,
+                    ./images/index-img/team/tom_web@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/index-img/team/tom@1x.jpg 1x,
+                    ./images/index-img/team/tom@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  src="./images/index-img/team/tom@1x.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                  loading="lazy"
+              /></picture>
               <div class="galery-wrapper">
                 <h3 class="galery-title subtitle">Tom Ford</h3>
                 <p class="galery-text text">Frontend Developer</p>
@@ -275,16 +337,25 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                  ./images/index-img/team/camila@1x.jpg 1x,
-                  ./images/index-img/team/camila@2x.jpg 2x
-                "
-                src="./images/index-img/team/camila@1x.jpg"
-                alt="Camila Garcia"
-                width="264"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-img/team/camila_web@1x.webp 1x,
+                    ./images/index-img/team/camila_web@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/index-img/team/camila@1x.jpg 1x,
+                    ./images/index-img/team/camila@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  src="./images/index-img/team/camila@1x.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                  loading="lazy"
+              /></picture>
               <div class="galery-wrapper">
                 <h3 class="galery-title subtitle">Camila Garcia</h3>
                 <p class="galery-text text">Marketing</p>
@@ -322,16 +393,25 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                  ./images/index-img/team/daniel@1x.jpg 1x,
-                  ./images/index-img/team/daniel@2x.jpg 2x
-                "
-                src="./images/index-img/team/daniel@1x.jpg"
-                alt="Daniel Wilson"
-                width="264"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-img/team/daniel_web@1x.webp 1x,
+                    ./images/index-img/team/daniel_web@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/index-img/team/daniel@1x.jpg 1x,
+                    ./images/index-img/team/daniel@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  src="./images/index-img/team/daniel@1x.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                  loading="lazy"
+              /></picture>
               <div class="galery-wrapper">
                 <h3 class="galery-title subtitle">Daniel Wilson</h3>
                 <p class="galery-text text">UI Designer</p>
@@ -434,26 +514,43 @@
             <li class="social-link">
               <a
                 class="social-link-item-footer"
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="social-link">
-              <a class="social-link-item-footer" href="https://twitter.com/">
+              <a
+                class="social-link-item-footer"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
             <li class="social-link">
-              <a class="social-link-item-footer" href="https://facebook.com">
+              <a
+                class="social-link-item-footer"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
             <li class="social-link">
-              <a class="social-link-item-footer" href="https://linkedin.com">
+              <a
+                class="social-link-item-footer"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
