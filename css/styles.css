@@ -1163,19 +1163,36 @@ ol {
 /*========== PORTFOLIO PAGE ==========*/
 
 .portfolio {
-  margin-top: 48px;
-  margin-bottom: 48px;
   /* padding: 96px 0 120px; */
 }
+
+
 
 .filters {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  /* margin-bottom: 72px; */
   gap: 16px 24px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
+
+@media only screen and (min-width: 768px) {
+  .filters {
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .filters {
+    margin-top: 100px;
+    margin-bottom: 72px;
+  }
+}
+
 
 .portfolio-btn {
   padding: 12px 24px;
@@ -1215,10 +1232,11 @@ ol {
   row-gap: 48px;
   column-gap: 24px;
   background-color: #ffffff;
+  margin-bottom: 48px;
 }
 
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
 }
 
 .portfolio-link {
